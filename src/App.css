@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.container {
+    width: 100%;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerHeader {
+    text-align: center;
+    padding: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containerHeader input {
+    font-size: 28px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.containerHeader input:focus {
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.containerHeader input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Outfit", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerBody {
+    height: 70vh;
+    margin: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.containerBody h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.containerBody .temp {
+    font-size: 80px;
+    margin: 0;
+}
+
+.containerBody .description {
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    transform: rotate(270deg);
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.details .bold {
+    font-weight: bold;
+}
+
+.details p {
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    text-align: center;
+    font-size: 25px;
 }
